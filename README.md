@@ -30,51 +30,17 @@ Visualize clusters using PCA (to reduce dimensions to 2).
 
 Compare performance with the scikit-learn version.
 
-🗂️ File Overview
-File Name	Description
-clustering.ipynb	Full code implementation and step-by-step output
-players_22.csv	Dataset used for clustering
+🗂️ File Overview:
+	
+Description : clustering.ipynb	Full code implementation and step-by-step output
 
-📊 Dataset
-We use the FIFA 22 player dataset (specifically players_22.csv) which includes attributes like:
+Dataset : players_22.csv used for clustering
 
-Pace
-
-Shooting
-
-Passing
-
-Dribbling
-
-Physical
-
-📥 Download it from Kaggle (registration may be required).
-
-⚙️ Local Setup Instructions
-✅ Prerequisites
-Python 3.8 or higher
-
-Jupyter Notebook or any Python IDE
-
-📦 Required Packages
-Install the necessary packages using pip:
-
-bash
-Copy
-Edit
-pip install pandas numpy scikit-learn matplotlib
 🧪 How It Works
-Initialization:
 
-Choose number of clusters k
+Initialization: Choose number of clusters k and randomly assign initial centroids
 
-Randomly assign initial centroids
-
-Iteration:
-
-For each data point, compute its distance to each centroid
-
-Assign each point to the nearest cluster
+Iteration: For each data point, compute its distance to each centroid and assign each point to the nearest cluster
 
 Recalculate each centroid as the mean of its assigned points
 
